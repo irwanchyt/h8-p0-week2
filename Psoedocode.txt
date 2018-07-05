@@ -1,0 +1,176 @@
+TUGAS PSEUDOCODE
+1. NEWTON
+
+DIKETAHUI 
+ massa      = 600 kg
+ percepatan = 2 m/s2
+  DItanya    = Gayanya... ?
+  
+ Gaya = massa * percepatan 
+      = 600 kg * 2 m/s2
+	  = 1200 N
+	  
+PSEUDOCODE
+-----------
+ var massa      = 600 kg
+ var percepatan = 2 m/s2
+ 
+ var gaya       = massa * percepatan
+ var gaya       = 600 kg * 2 m/s2
+                =  1200 N         
+				
+				
+2. KABISAT
+KABISAT 'ALGORITMA'
+=========================
+SIMPAN nilai 'Tahun'
+SIMPAN nilai 'Tahun Kabisat'=> tidak disi dulu nilainya ,kita akan menghitungnya terlebih dahulu
+
+MENGHITUNG nilai'Tahun kabisat' yaitu nilai 'Tahun' MOD 4
+TAMPILKAN  hasil nilai'Tahun Kabisat'
+
+JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0 maka
+9.a.Lanjut ke LANGKAH BERIKUTNYA
+9.b Menampilkan (BUKAN TAHUN KABISAT)
+
+SIMPAN Hasil nilai dari 'Tahun kabisat' sebelumnya
+HITUNG nilai 'Tahun kabisat' yaitu Hasil nilai'Tahun Kabisat' sebelumnya MOD 100
+
+JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0
+17.a Menampilkan (TAHUN KABISAT)
+17.b Lanjut ke LANGKAH BERIKUTNYA
+
+SIMPAN Hasil nilai dari 'Tahun kabisat' sebelumnya
+HITUNG nilai 'Tahun kabisat' yaitu Hasil nilai'Tahun Kabisat' sebelumnya MOD 400
+
+JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0 MAKA
+25.a Menampilkan (TAHUN KABISAT)
+25.b Menampilkan (BUKAN TAHUN KABISAT)
+
+Selesai
+
+KABISAT'pseudocode'
+==========================
+STORE var 'Tahun'
+STORE var 'Tahun Kabisat' without any value
+
+CALCULATE 'Tahun Kabisat' = var 'Tahun' MOD 4
+DISPLAY result 'Tahun Kabisat'
+
+IF result 'Tahun Kabisat' = 0 THEN
+DISPLAY (TAHUN KABISAT)
+ELSE
+(DO NEXT STEP)
+END IF
+
+STORE result var 'Tahun Kabisat' before
+CALCULATE var 'Tahun Kabisat' = var result 'Tahun Kabisat' before MOD 100
+DISPLAY result 'Tahun Kabisat'
+
+IF result 'Tahun Kabisat' = 0 THEN
+DO NEXT STEP
+ELSE
+
+3
+LOUNDRY 'ALGORITMA'
+==========================
+
+SIMPAN jumlah 'pakaian foxie' yang akan dicuci adalah 20
+HITUNG 'Pakaian foxie' dimulai dari 0
+
+SAAT menghitung  setiap 'pakaian foxie' yang dimasukan ke mesin cuci kurang dari 20
+MAKA akan kita TAMBAHKAN 1
+
+'pakaian foxie ke 1'
+'pakaian foxie ke 2'
+'pakaian foxie ke 3'
+'pakaian foxie ke 4'
+'pakaian foxie ke 5'
+'pakaian foxie ke 6'
+'pakaian foxie ke 7'
+'pakaian foxie ke 8'
+| |
+| |
+V V
+'pakaian foxie ke 20'
+
+IF 'Jumlah pakaian foxie' yang dimasuk ke mesin cuci sama dengan 20 MAKA
+TAMPILKAN 'PAKAIAN FOXIE SIAP DICUCI'
+SELESAI
+
+LOUNDRY 'pseudocode'
+=======================
+STORE 'jumlah pakaian foxie' is 20
+CALCULATE 'pakaian foxie' started 0
+
+while 'pakaian foxie' < 20 THEN
+ADD 1
+'pakaian foxie ke 1'
+'pakaian foxie ke 2'
+'pakaian foxie ke 3'
+'pakaian foxie ke 4'
+'pakaian foxie ke 5'
+'pakaian foxie ke 6'
+'pakaian foxie ke 7'
+'pakaian foxie ke 8'
+| |
+| |
+V V
+'pakaian foxie ke 20'
+
+IF'jumlah pakaian foxie' = 20 THEN
+DISPLAY " PAKAIN FOXIE SIAP DICUCI "
+
+END while
+
+
+
+DISPLAY (TAHUN KABISAT)
+END IF
+
+STORE result var 'Tahun Kabisat' before
+CALCULATE var 'Tahun Kabisat' = var result 'Tahun Kabisat' before MOD 100
+DISPLAY result 'Tahun Kabisat'
+
+IF result 'Tahun Kabisat' = 0 THEN
+DISPLAY (TAHUN KABISAT)
+ELSE
+DISPLAY (BUKAN TAHUN KABISAT)
+END IF
+
+END
+4
+SISWA 'ALGORITMA'
+==========================
+SIMPAN 'jumlah murid' adalah 40
+SIMPAN 'murid' adalah salah satu bagian dari jumlah murid
+SIMPAN 'bu guru'adalah orang yang memeriksa
+SIMPAN 'hasil riset'adalah nilai dari memeriksa kuku (BENAR ATAU SALAH)
+
+KETIKA 'murid' diperiksa oleh 'bu guru' dari 'murid' ke 1
+hingga 'murid' ke 40
+SIMPAN nilai 'hasil riset' dari 'murid' yang diperiksa
+
+JIKA 'murid' memiliki kuku panjang adalah BENAR MAKA
+TAMPILKAN (GURU AKAN MENGHUKUM MURIDNYA)
+NAMUN
+(GURU SANGAT MEMUJI MURIDNYA)
+
+SELESAI
+
+SISWA 'pseudocode'
+========================
+STORE sum 'murid' is 40
+STORE 'murid' is unit from 40
+STORE 'bu guru'
+STORE 'hasil riset' is var (TRUE OR FALSE)
+
+WHILE 'murid' DO 'bu guru' FROM 1 to 40
+STORE 'hasil riset'
+
+IF 'murid' memiliki kuku panjang is TRUE THEN
+DISPLAY (GURU AKAN MENGHUKUMNYA)
+Else
+(GURU AKAN SANGAT MEMUJINYA)
+
+END IF
