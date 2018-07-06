@@ -1,176 +1,111 @@
-TUGAS PSEUDOCODE
-1. NEWTON
+ugas PSEUDOCODE
 
-DIKETAHUI 
- massa      = 600 kg
- percepatan = 2 m/s2
-  DItanya    = Gayanya... ?
-  
- Gaya = massa * percepatan 
-      = 600 kg * 2 m/s2
-	  = 1200 N
-	  
-PSEUDOCODE
------------
- var massa      = 600 kg
- var percepatan = 2 m/s2
- 
- var gaya       = massa * percepatan
- var gaya       = 600 kg * 2 m/s2
-                =  1200 N         
-				
-				
-2. KABISAT
-KABISAT 'ALGORITMA'
-=========================
-SIMPAN nilai 'Tahun'
-SIMPAN nilai 'Tahun Kabisat'=> tidak disi dulu nilainya ,kita akan menghitungnya terlebih dahulu
 
-MENGHITUNG nilai'Tahun kabisat' yaitu nilai 'Tahun' MOD 4
-TAMPILKAN  hasil nilai'Tahun Kabisat'
+Soal No 1 Newton Second Law
+*****************************************
 
-JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0 maka
-9.a.Lanjut ke LANGKAH BERIKUTNYA
-9.b Menampilkan (BUKAN TAHUN KABISAT)
+1. ALGORITMA
 
-SIMPAN Hasil nilai dari 'Tahun kabisat' sebelumnya
-HITUNG nilai 'Tahun kabisat' yaitu Hasil nilai'Tahun Kabisat' sebelumnya MOD 100
+  1. Simpan "Massa" dengan nilai berapapun;
+  2. Simpan "Percepatan" dengan nilai berapapun;
+  3. Simpan "Resultan" dengan nilai berapapun;
+  4. Hitung hasil perkalian anatara "Massa" dengan "Percepatan";
+  5. Setelah ,mendapatkan hasil perhitungan, isikan hasilnya ke dalam " Resultan";
+  6. Tampilkan Resultan;
 
-JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0
-17.a Menampilkan (TAHUN KABISAT)
-17.b Lanjut ke LANGKAH BERIKUTNYA
+2. PSEUDOCODE
 
-SIMPAN Hasil nilai dari 'Tahun kabisat' sebelumnya
-HITUNG nilai 'Tahun kabisat' yaitu Hasil nilai'Tahun Kabisat' sebelumnya MOD 400
+  STORE "Massa" with any value
+  STORE "Percepatan" with any value
+  STORE " Resultan" with any value
 
-JIKA hasil dari nilai 'Tahun Kabisat' sama dengan 0 MAKA
-25.a Menampilkan (TAHUN KABISAT)
-25.b Menampilkan (BUKAN TAHUN KABISAT)
+  CALCULATE "Massa" times "Percepatan"
+  SET "Resultan" value with calculate result
 
-Selesai
+  DISPLAY "Resultan"
 
-KABISAT'pseudocode'
-==========================
-STORE var 'Tahun'
-STORE var 'Tahun Kabisat' without any value
 
-CALCULATE 'Tahun Kabisat' = var 'Tahun' MOD 4
-DISPLAY result 'Tahun Kabisat'
 
-IF result 'Tahun Kabisat' = 0 THEN
-DISPLAY (TAHUN KABISAT)
-ELSE
-(DO NEXT STEP)
-END IF
 
-STORE result var 'Tahun Kabisat' before
-CALCULATE var 'Tahun Kabisat' = var result 'Tahun Kabisat' before MOD 100
-DISPLAY result 'Tahun Kabisat'
+Soal No 2  Tahun Kabisat
+********************************
 
-IF result 'Tahun Kabisat' = 0 THEN
-DO NEXT STEP
-ELSE
+1. ALGORITMA
 
-3
-LOUNDRY 'ALGORITMA'
-==========================
+  1. Simpan angka tahun with any value;
+  2. Jika angka tahun habis di bagi 4 dan
+     tidak habis dibagi 100 merupakan tahun kabisat;
+  3. Jika angka tahun habis di bagi 4 dan
+     habis dibagi 100 dan habis dibagi 400 merupkan tahun kabisat;
+  4. jika angka tahun habis di bagi 4 dan habis dibagi 100 dan
+     tidak habis dibagi 400 bukan merupkan tahun kabisat;
 
-SIMPAN jumlah 'pakaian foxie' yang akan dicuci adalah 20
-HITUNG 'Pakaian foxie' dimulai dari 0
+2. PSEUDOCODE
 
-SAAT menghitung  setiap 'pakaian foxie' yang dimasukan ke mesin cuci kurang dari 20
-MAKA akan kita TAMBAHKAN 1
+STORE "tahun" with any value
 
-'pakaian foxie ke 1'
-'pakaian foxie ke 2'
-'pakaian foxie ke 3'
-'pakaian foxie ke 4'
-'pakaian foxie ke 5'
-'pakaian foxie ke 6'
-'pakaian foxie ke 7'
-'pakaian foxie ke 8'
-| |
-| |
-V V
-'pakaian foxie ke 20'
+if tahun MOD 4 equal to 0
+  if tahun MOD 100 not equal to 0
+  display  "Tahun Kabisat"
+  else
+      if tahun MOD 400 equal  to 0
+      display  "Tahun Kabisat"
+      else
+      display "Bukan Tahun Kabisat"
+      end if
+  end if
+else
+display "Bukan Tahun Kabisat"
+end if
 
-IF 'Jumlah pakaian foxie' yang dimasuk ke mesin cuci sama dengan 20 MAKA
-TAMPILKAN 'PAKAIAN FOXIE SIAP DICUCI'
-SELESAI
 
-LOUNDRY 'pseudocode'
-=======================
-STORE 'jumlah pakaian foxie' is 20
-CALCULATE 'pakaian foxie' started 0
+Soal No 3
+*************************************
+1. ALGORITMA
 
-while 'pakaian foxie' < 20 THEN
-ADD 1
-'pakaian foxie ke 1'
-'pakaian foxie ke 2'
-'pakaian foxie ke 3'
-'pakaian foxie ke 4'
-'pakaian foxie ke 5'
-'pakaian foxie ke 6'
-'pakaian foxie ke 7'
-'pakaian foxie ke 8'
-| |
-| |
-V V
-'pakaian foxie ke 20'
+1. Simpan TotalBaju = 20 ;
+2. Simpan nilai  dimulai dari 0;
+3. Lakukan Selama Counter kurang dari TotalBaju
+    3.a Counter = Counter tambah 1;
+    3.b Lanjut ke step 4;
+4.Tampilkan "Mesin Nyala", berati Counter sudah sama dengan TotalBaju;
 
-IF'jumlah pakaian foxie' = 20 THEN
-DISPLAY " PAKAIN FOXIE SIAP DICUCI "
+
+
+2. PSEUDOCODE
+
+STORE `TotalBaju` with 20
+STORE `Counter` = 0
+
+while `Counter` LESS THAN  `TotalBaju`
+  SET `counter` = `counter` +1
+
+DISPLAY "MesinNyala"
+
+
+Soal No 4  Periksa Kuku
+**************************
+1. ALGORITMA
+
+  1. Simpan JumlahMurit = 41
+  2. Simpan Murit = 1
+  3. Simpan Kuku = `panjang`
+  4. Lakukan selama Murit kurang dari JumlahMurit
+     4.a. Jika kuku sama dengan panjang tampilkan "Hukum"
+      Murit =Murit tambah 1
+     4.b. Jika salah tampilkan "Pujian" Murit =Murit tambah 1
+
+2. PSEUDOCODE
+
+STORE `JumlahMurit` with 41
+STORE `Murit` = 1
+STORE `kuku`  = `panjang`
+while `Murit` LESS THAN `JumlahMurit`
+  if "kuku" EQUAL to "panjang"
+  DISPLAY "Hukum"
+  SET `Murit`=`Murit` +1
+  else
+  DISPLAY "Prestasi"
+  SET `Murit`=`Murit` +1
 
 END while
-
-
-
-DISPLAY (TAHUN KABISAT)
-END IF
-
-STORE result var 'Tahun Kabisat' before
-CALCULATE var 'Tahun Kabisat' = var result 'Tahun Kabisat' before MOD 100
-DISPLAY result 'Tahun Kabisat'
-
-IF result 'Tahun Kabisat' = 0 THEN
-DISPLAY (TAHUN KABISAT)
-ELSE
-DISPLAY (BUKAN TAHUN KABISAT)
-END IF
-
-END
-4
-SISWA 'ALGORITMA'
-==========================
-SIMPAN 'jumlah murid' adalah 40
-SIMPAN 'murid' adalah salah satu bagian dari jumlah murid
-SIMPAN 'bu guru'adalah orang yang memeriksa
-SIMPAN 'hasil riset'adalah nilai dari memeriksa kuku (BENAR ATAU SALAH)
-
-KETIKA 'murid' diperiksa oleh 'bu guru' dari 'murid' ke 1
-hingga 'murid' ke 40
-SIMPAN nilai 'hasil riset' dari 'murid' yang diperiksa
-
-JIKA 'murid' memiliki kuku panjang adalah BENAR MAKA
-TAMPILKAN (GURU AKAN MENGHUKUM MURIDNYA)
-NAMUN
-(GURU SANGAT MEMUJI MURIDNYA)
-
-SELESAI
-
-SISWA 'pseudocode'
-========================
-STORE sum 'murid' is 40
-STORE 'murid' is unit from 40
-STORE 'bu guru'
-STORE 'hasil riset' is var (TRUE OR FALSE)
-
-WHILE 'murid' DO 'bu guru' FROM 1 to 40
-STORE 'hasil riset'
-
-IF 'murid' memiliki kuku panjang is TRUE THEN
-DISPLAY (GURU AKAN MENGHUKUMNYA)
-Else
-(GURU AKAN SANGAT MEMUJINYA)
-
-END IF
