@@ -17,11 +17,9 @@ var j = z - (60 * k)//j adalah hasil nilai dari pembagia floior
 var tengah = z - z
 
 if ( j < 10) {
-console.log (jam +':'+ tengah+ j)
+menit =jam +':'+ tengah+ j
 }else{
-console.log( jam + ':' + j)
+ menit = jam + ':' + j
 
 }
 return menit
-}
-konversiMenit()
